@@ -8,8 +8,11 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface TIMERAppDelegate : NSObject <NSApplicationDelegate>
+@interface TIMERAppDelegate : NSObject <NSApplicationDelegate>{
+    __unsafe_unretained NSWindow *_window;
+    IBOutlet NSMenu *statusMenu;
+    NSStatusItem * statusItem;
+}
 
-@property (assign) IBOutlet NSWindow *window;
 
 @end
